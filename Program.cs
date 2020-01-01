@@ -6,12 +6,12 @@ namespace Hello
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Wpisz swoje Imie: ");
+            Console.Write("Wpisz swoje Imie: ");
             string name = Console.ReadLine();
 
             Console.WriteLine("Witaj, " + name);
 
-            Console.WriteLine("Wpisz ile masz lat: ");
+            Console.Write("Wpisz ile masz lat: ");
             int age = int.Parse(Console.ReadLine());
 
             if(age >= 18)
