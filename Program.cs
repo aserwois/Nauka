@@ -4,7 +4,7 @@ namespace Hello
 {
     class Program
     {
-        static void Main(string[] args)
+        static void n(string[] args)
         {
             ValueTypes();
 
