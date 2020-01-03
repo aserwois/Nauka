@@ -2,10 +2,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace DzienniczekUcznia
+namespace Odcinek10
 {
     class Dziennik
     {
+        public Dziennik()
+        {
+            ratings = new List<float>();    
+        }
+
         // Stan (zmienne - pola)
         List<float> ratings = new List<float>();
         // Zachowania
