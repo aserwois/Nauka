@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Odcinek10
+namespace DzienniczekUcznia
 {
     class Dziennik
     {
@@ -19,17 +19,21 @@ namespace Odcinek10
             ratings.Add(rating);
         }
 
-        public float CalculateAverage()
+        internal Statystyki ComputeStatistics()
         {
-            float suma = 0, avg = 0;
+            Statystyki staty = new Statystyki();
+
+            float suma = 0f;
             foreach (var rating in ratings)
             {
                 suma += rating;
             }
 
-            avg = suma / ratings.Count();
+            staty.AverageGrade = suma / ratings.Count();
+            staty.MaxGrade = ratings.Max();
+            staty.MinGrade = ratings.Min();
 
-            return avg;
+            return staty;
         }
 
         public float GiveMaxRating()

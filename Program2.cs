@@ -9,11 +9,17 @@ namespace DzienniczekUcznia
         {
             Dziennik dziennik = new Dziennik();
             
-            //dziennik.AddRating(5);   
-            //dziennik.AddRating(8.5f); 
-           // dziennik.AddRating(4.7f);     
+            dziennik.AddRating(5);   
+            dziennik.AddRating(8.5f); 
+            dziennik.AddRating(4.7f);  
 
-            //float avg = dziennik.CalculateAverage(); 
+            Statystyki staty = dziennik.ComputeStatistics();   
+            Console.WriteLine("Średnia wartość to: " + staty.AverageGrade);
+            Console.WriteLine("Maksymalna wartość to: " + staty.MaxGrade);
+            Console.WriteLine("Minimalna wartość to: " + staty.MinGrade);
+
+            
+            /*float avg = dziennik.CalculateAverage(); 
             //float max = dziennik.GiveMaxRating();
            // float min = dziennik.GiveMinRating();     
 
@@ -42,7 +48,9 @@ namespace DzienniczekUcznia
                 Console.WriteLine("Maksymalna ocena to " + dziennik.GiveMaxRating());
                 Console.WriteLine("Najniższa ocena to " + dziennik.GiveMinRating());
 
-                Console.ReadKey();
+                Console.ReadKey();*/
         }
+
+        
     }
 }

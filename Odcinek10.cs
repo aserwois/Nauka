@@ -1,11 +1,11 @@
-using System;
+/*using System;
 using System.Collections.Generic;
 
 namespace Odcinek10
 {
     class Program
     {
-        static void Main(string[] args)
+        static void M(string[] args)
         {
             Dziennik dziennik = new Dziennik();
             dziennik.AddRating(3);
@@ -15,4 +15,4 @@ namespace Odcinek10
             dziennik2.AddRating(8);
         }
     }
-}
+}*/
