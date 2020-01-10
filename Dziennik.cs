@@ -8,18 +8,22 @@ namespace DzienniczekUcznia
     {
         public Dziennik()
         {
-            ratings = new List<float>();    
+            ratings = new List<float>();   
         }
 
         // Stan (zmienne - pola)
-        List<float> ratings = new List<float>();
+        private List<float> ratings = new List<float>();
         // Zachowania
+        public string name;
         public void AddRating(float rating)
         {
-            ratings.Add(rating);
+            if(rating >= 0 && rating <= 10)
+            {
+                ratings.Add(rating);
+            }
         }
 
-        internal Statystyki ComputeStatistics()
+        public Statystyki ComputeStatistics()
         {
             Statystyki staty = new Statystyki();
 
