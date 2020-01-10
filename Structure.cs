@@ -6,13 +6,19 @@ namespace Giraffe
     {
         static void Main(string[] args)
         {
-            System.Console.Write("Enter a number: ");
-            double num1 = Convert.ToDouble(Console.ReadLine());
-            System.Console.Write("Enter another number: ");
-            double num2 = Convert.ToDouble(Console.ReadLine());
+            int[] luckyNumbers = {4, 8 , 15, 16, 23, 42};
+            string[] friends = new string[5];
+            luckyNumbers[1] = 900;
 
-            System.Console.WriteLine(num1 + num2);
+            friends[0] = "Jim";
+            friends[1] = "Mati";
+            friends[2] = "Łozi";
+            friends[3] = "Karol";
+            friends[4] = "Pedro";
+            
 
+            System.Console.WriteLine(luckyNumbers[1]);
+            System.Console.WriteLine(friends[2]);
         }
     }
 }       
