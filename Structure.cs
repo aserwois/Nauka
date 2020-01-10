@@ -6,9 +6,10 @@ namespace Giraffe
     {
         static void Main(string[] args)
         {
-            string welcome = "witaj!";
-            char grade = 'A';
-            Console.WriteLine($"Mateuszku {welcome} {grade}");
+            System.Console.WriteLine("What is your name?");
+            string name = Console.ReadLine();
+
+            System.Console.WriteLine($"Hi {name}!");
         }
     }
 }       
