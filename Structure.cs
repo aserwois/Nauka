@@ -1,18 +1,28 @@
-using System;
+/*using System;
 
 namespace Giraffe
 {
     class Program
     {
-        static void Main(string[] args)
+        static void M(string[] args)
         {
-           System.Console.WriteLine(cube(5));
+            Console.WriteLine(getMax(3,4));
         }
 
-        static int cube(int num)
+        static void getMax(int num1, int num2)
         {
-            int result = num * num * num;
-            return result;
+            int result;
+            if(num1 > num2)
+            {
+                result = num1;
+            }   else if (num1 == num2)
+            {
+                int Convert.(result) = "Wprowadzone liczby są równe!";
+    
+            else 
+            {
+                return num2;
+            }
         }
     }
-}       
+}       */
