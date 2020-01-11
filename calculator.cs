@@ -4,7 +4,7 @@ namespace calculator
 {
     class program
     {
-        static void Main(string[] args)
+        static void M(string[] args)
         {
             Console.Write("Enter the number: ");
             double num1 = Convert.ToDouble(Console.ReadLine());
