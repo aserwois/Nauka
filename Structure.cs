@@ -6,19 +6,13 @@ namespace Giraffe
     {
         static void Main(string[] args)
         {
-            int[] luckyNumbers = {4, 8 , 15, 16, 23, 42};
-            string[] friends = new string[5];
-            luckyNumbers[1] = 900;
+           System.Console.WriteLine(cube(5));
+        }
 
-            friends[0] = "Jim";
-            friends[1] = "Mati";
-            friends[2] = "Łozi";
-            friends[3] = "Karol";
-            friends[4] = "Pedro";
-            
-
-            System.Console.WriteLine(luckyNumbers[1]);
-            System.Console.WriteLine(friends[2]);
+        static int cube(int num)
+        {
+            int result = num * num * num;
+            return result;
         }
     }
 }       
