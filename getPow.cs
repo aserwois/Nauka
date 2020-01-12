@@ -4,7 +4,7 @@ namespace power
 {
     class program
     {
-        static void Main(string[] args)
+        static void Ma(string[] args)
         {
             Console.WriteLine(getPow(4,5));
         }
