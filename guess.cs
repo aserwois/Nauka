@@ -9,17 +9,27 @@ namespace guessProgram
             string password = "batman";
             string guess = "";
             int guessCounter = 0;
+            int guessLimit = 3;
+            bool outOfGuesses = false;
 
-            do
+            while(!outOfGuesses && guess != password)
             {
-            System.Console.Write("Enter the guess: ");
-            guess = Console.ReadLine();
-            guessCounter++;
+                if(guessCounter < guessLimit)
+                {
+                    System.Console.Write("Enter the guess: ");
+                    guess = Console.ReadLine();
+                    guessCounter++;
+                } else 
+                {
+                    outOfGuesses = true;
+                    System.Console.WriteLine("You are out of guesses idioten! :)");
+                }
             }
-            while(guess != password);
-
-            System.Console.WriteLine("You won!");
-            System.Console.WriteLine($"You was trying to guest {guessCounter} times!");
+            if(outOfGuesses == false)
+            {
+                System.Console.WriteLine("You won!");
+                System.Console.WriteLine($"You was trying to guest {guessCounter}");   
+            } 
         }
     }
 }
