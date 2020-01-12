@@ -8,9 +8,11 @@ namespace clasobje
         public string author;
         public int pages;
 
-        public book(string name)
+        public book(string title, string author, int pages)
         {
-            System.Console.WriteLine(name);
+            this.title = title;
+            this.author = author;
+            this.pages = pages;
         }
     }
 }
