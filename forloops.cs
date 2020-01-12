@@ -4,7 +4,7 @@ namespace forloops
 {
     class program
     {
-        static void Main(string[] args)
+        static void Ma(string[] args)
         {
             for(int i = 1; i <= 5;i++)
             {
