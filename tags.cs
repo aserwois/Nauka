@@ -4,7 +4,7 @@ namespace weekDays
 {
     class programd
     {
-        static void Main(string[] args)
+        static void M(string[] args)
         {
             System.Console.WriteLine(getDay(3));
         }
