@@ -4,7 +4,7 @@ namespace guessProgram
 {
     class program
     {
-        static void Main(string[] args)
+        static void M(string[] args)
         {
             string password = "batman";
             string guess = "";
