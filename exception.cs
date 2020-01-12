@@ -4,7 +4,7 @@ namespace except
 {
     class program
     {
-        static void Main(string[] args)
+        static void M(string[] args)
         {
             try
             {
