@@ -14,5 +14,15 @@ namespace clasobje
             this.author = author;
             this.pages = pages;
         }
+
+        public bool isBookBig()
+        {
+            if(pages > 300) 
+            {
+                return true;
+            }
+
+            return false;
+        }
     }
 }

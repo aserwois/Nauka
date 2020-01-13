@@ -12,6 +12,9 @@ namespace clasobje
 
             Console.WriteLine(success.title);
 
+            System.Console.WriteLine(success.isBookBig());
+            System.Console.WriteLine(success2.isBookBig());
+
             Console.ReadLine();
         }
     }
